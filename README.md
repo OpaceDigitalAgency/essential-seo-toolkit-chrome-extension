@@ -1,4 +1,4 @@
-# Essential SEO Toolkit for Chrome
+# Opace Essential SEO Toolkit & SEO Audit Tool – Google Chrome Extension
 
 ![Essential SEO Toolkit private on-page SEO audit](assets/essential-seo-toolkit-chrome-hero.png)
 
@@ -7,7 +7,7 @@
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-5f6368)](manifest.json)
 [![Licence: MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](LICENSE)
 
-Essential SEO Toolkit is a privacy-first SEO tool for Chrome. It runs a practical on-page SEO audit of the active tab, explains each finding without inventing an SEO score, and keeps reusable page-aware SEO bookmarks beside the evidence that needs attention.
+Opace Essential SEO Toolkit & SEO Audit Tool is a privacy-first SEO tool for Google Chrome. It runs a practical on-page SEO audit of the active tab, explains each finding without inventing an SEO score, and keeps reusable page-aware SEO bookmarks beside the evidence that needs attention.
 
 **[Install from the Chrome Web Store](https://chromewebstore.google.com/detail/icagkiolfkmndbggheneeamfbnobcdma)** · **[WordPress SEO plugin](https://wordpress.org/plugins/opace-essential-seo-toolkit/)** · **[Opace web design](https://opace.agency/services/web-design/)**
 
@@ -95,12 +95,12 @@ npm run checksum
 Version `5.0.0` release SHA-256:
 
 ```text
-cf03500840eaa876ae44279bacb031eaa04aa9c122e9e93cd4bcc14bcfabb3d7
+4abcd72401c3070cc196bef8eed770139ab22515748057d5ae0cdbc48989bedc
 ```
 
 ## Related SEO plugins and support
 
-- [Essential SEO Toolkit for WordPress](https://github.com/OpaceDigitalAgency/essential-seo-toolkit-wordpress-plugin)
+- [Opace Essential SEO Toolkit & SEO Audit Tool – WordPress Plugin](https://github.com/OpaceDigitalAgency/essential-seo-toolkit-wordpress-plugin)
 - [WordPress.org plugin listing](https://wordpress.org/plugins/opace-essential-seo-toolkit/)
 - [Opace browser tools](https://opace.agency/tools/browser/)
 - [Opace SEO services](https://opace.agency/services/seo/)
@@ -115,4 +115,3 @@ Focused bug reports and pull requests are welcome; see [CONTRIBUTING.md](CONTRIB
 ## Licence (License)
 
 Copyright © Opace Ltd. Released under the [MIT Licence](LICENSE). Bundled libraries retain their own licences; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-
