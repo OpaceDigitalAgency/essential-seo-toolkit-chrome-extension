@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-archive="release/essential-seo-toolkit-5.0.0.zip"
+archive="release/essential-seo-toolkit-5.0.1.zip"
 release_files=()
 mkdir -p release
 rm -f "$archive"

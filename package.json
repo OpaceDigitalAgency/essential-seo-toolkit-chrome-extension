@@ -1,12 +1,11 @@
 {
   "name": "essential-seo-toolkit-chrome-extension",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "private": true,
   "description": "Private on-page SEO audit and page-aware SEO toolkit for Chrome",
   "scripts": {
     "test": "node scripts/validate.mjs",
     "build": "bash scripts/build-release.sh",
-    "checksum": "shasum -a 256 release/essential-seo-toolkit-5.0.0.zip"
+    "checksum": "shasum -a 256 release/essential-seo-toolkit-5.0.1.zip"
   }
 }
-

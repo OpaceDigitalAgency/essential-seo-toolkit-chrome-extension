@@ -2,7 +2,7 @@
 
 ![Essential SEO Toolkit private on-page SEO audit](assets/essential-seo-toolkit-chrome-hero.png)
 
-[![Version](https://img.shields.io/badge/version-5.0.0-0b6e4f)](https://github.com/OpaceDigitalAgency/essential-seo-toolkit-chrome-extension/releases/tag/v5.0.0)
+[![Version](https://img.shields.io/badge/version-5.0.1-0b6e4f)](https://github.com/OpaceDigitalAgency/essential-seo-toolkit-chrome-extension/releases/tag/v5.0.1)
 [![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-install-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/icagkiolfkmndbggheneeamfbnobcdma)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-5f6368)](manifest.json)
 [![Licence: MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](LICENSE)
@@ -92,10 +92,10 @@ npm run build
 npm run checksum
 ```
 
-Version `5.0.0` release SHA-256:
+Version `5.0.1` release SHA-256:
 
 ```text
-4abcd72401c3070cc196bef8eed770139ab22515748057d5ae0cdbc48989bedc
+d4da09cdf2871939f1d69d15f4e0e2c8d1d3b6b7a24f29447074e3b209255da5
 ```
 
 ## Related SEO plugins and support
