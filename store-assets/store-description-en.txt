@@ -1,0 +1,34 @@
+Essential SEO Toolkit turns the page you are viewing into a private, practical on-page review.
+
+OPEN IT. AUDIT THE PAGE. ACT ON THE FINDINGS.
+
+Open the extension on a public webpage and the local audit runs in your browser. It reports clear Pass, Review and Info findings instead of an unexplained score.
+
+THE LOCAL AUDIT CHECKS
+
+• Page title and meta description presence and length
+• H1 count and skipped heading levels
+• Canonical URL and page-level indexing directives
+• HTTPS, document language and mobile viewport
+• Images missing alt attributes
+• Structured data blocks and detected schema types
+• Open Graph title, description and image
+• Visible word count and internal, external and nofollow links
+
+Copy the plain-text summary to share findings or add them to your worklist. The checks are review prompts, not ranking guarantees; context and human judgement still matter.
+
+LOCAL ENGINES
+
+Opening the toolkit starts bundled local accessibility and current-visit performance checks. axe-core looks for issues such as missing labels, contrast failures and structural problems. Web Vitals captures LCP, CLS, INP, FCP and TTFB from this visit. Results appear as plain-English findings with expandable technical detail. Current-visit metrics are not PageSpeed Insights, CrUX field data or ranking evidence.
+
+FREE DEEPER CHECKS
+
+Finding-ranked actions open six no-login services for performance, search appearance, structured data, accessibility, security headers and DNS. A separate Saved tools tab keeps every built-in and user-added page-aware link available across websites. Custom links and groups are managed in Settings.
+
+PRIVATE BY DESIGN
+
+The extension reads and audits only the active tab after you click it. The audit runs locally and no page content, browsing history or results are sent to Opace. Custom settings are stored locally in Chrome. There is no broad host permission.
+
+Selected deeper checks open independent third-party websites. Their own terms and privacy policies apply. Opace is not affiliated with those services.
+
+For help or feedback, use the support link on this listing.

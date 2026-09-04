@@ -1,0 +1,12 @@
+.DS_Store
+.agent/
+background.js
+css/bootstrap-combined.min.css
+images/Old/
+js/bootstrap.min.js
+js/jquery.min.js
+store-assets-2026-08-28/
+release/unpacked-*/
+release/archive/
+node_modules/
+*.log

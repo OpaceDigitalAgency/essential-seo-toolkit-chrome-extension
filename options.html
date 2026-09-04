@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Essential SEO Toolkit settings</title>
+    <link rel="stylesheet" href="css/options.css">
+  </head>
+  <body>
+    <header class="settings-header">
+      <div class="header-inner">
+        <img src="images/get_started48.png" width="48" height="48" alt="">
+        <div>
+          <p class="eyebrow">Opace</p>
+          <h1>Essential SEO Toolkit settings</h1>
+          <p>Choose the optional deeper checks shown beneath your local findings. The page audit works without any external service.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="settings-shell">
+      <div id="notice" class="notice" role="status" hidden></div>
+
+      <nav class="tabs" aria-label="Settings sections">
+        <button class="tab is-active" type="button" data-tab="sources" aria-selected="true">Deeper-check links</button>
+        <button class="tab" type="button" data-tab="categories" aria-selected="false">Link groups</button>
+      </nav>
+
+      <section id="sources" class="tab-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Shown in the popup</p>
+            <h2>Deeper-check links</h2>
+            <p>The popup ranks these links against its local findings and shows the most relevant beneath “Verify the findings that matter”. No external service opens automatically.</p>
+          </div>
+          <button id="restore-built-ins" class="secondary-button" type="button">Restore missing built-ins</button>
+        </div>
+
+        <details class="token-guide">
+          <summary>URL template help</summary>
+          <div><code>[%url%]</code> full page address · <code>[%host%]</code> domain only · <code>[%url_encoded%]</code> encoded page address · <code>[%host_encoded%]</code> encoded domain</div>
+        </details>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Deeper check</th><th>Destination template</th><th>Popup group</th><th></th></tr></thead>
+            <tbody id="sources-body"></tbody>
+          </table>
+        </div>
+
+        <form id="source-form" class="form-card">
+          <h3>Add or update a deeper-check link</h3>
+          <div class="form-grid">
+            <label>Name<input id="source-name" type="text" maxlength="80" required></label>
+            <label>URL template<input id="source-url" type="text" inputmode="url" placeholder="https://example.com/check?url=[%url_encoded%]" required></label>
+            <label>Popup group<select id="source-category" required></select></label>
+          </div>
+          <button class="primary-button" type="submit">Save deeper check</button>
+        </form>
+      </section>
+
+      <section id="categories" class="tab-panel" hidden>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Popup organisation</p>
+            <h2>Link groups</h2>
+            <p>Groups organise custom links in the popup’s deeper-check recommendations. A group cannot be deleted while it contains links.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap compact-table">
+          <table>
+            <thead><tr><th>Group</th><th>Links shown</th><th></th></tr></thead>
+            <tbody id="categories-body"></tbody>
+          </table>
+        </div>
+
+        <form id="category-form" class="form-card compact-form">
+          <h3>Add a link group</h3>
+          <label>Name<input id="category-name" type="text" maxlength="60" required></label>
+          <button class="primary-button" type="submit">Add group</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/defaults.js"></script>
+    <script src="js/options.js"></script>
+  </body>
+</html>

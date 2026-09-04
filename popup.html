@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Essential SEO Toolkit</title>
+    <style>html,body{width:430px;min-width:375px;max-width:100%;min-height:560px;margin:0;background:#f5f8fc}</style>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <img src="images/get_started48.png" width="44" height="44" alt="">
+        <div class="brand-copy">
+          <p class="eyebrow">Opace</p>
+          <h1>Essential SEO Toolkit</h1>
+          <p>Local page audit + free deeper checks</p>
+        </div>
+        <button id="open-settings" class="icon-button" type="button" aria-label="Open toolkit settings" title="Settings">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 8.75A3.25 3.25 0 1 0 12 15.25 3.25 3.25 0 0 0 12 8.75Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M19.1 13.4a7.4 7.4 0 0 0 0-2.8l2-1.55-2-3.46-2.48 1a7.7 7.7 0 0 0-2.42-1.4L13.82 2h-4l-.4 3.19A7.7 7.7 0 0 0 7 6.59l-2.48-1-2 3.46 2 1.55a7.4 7.4 0 0 0 0 2.8l-2 1.55 2 3.46 2.48-1a7.7 7.7 0 0 0 2.42 1.4l.4 3.19h4l.4-3.19a7.7 7.7 0 0 0 2.42-1.4l2.48 1 2-3.46Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
+        </button>
+      </header>
+
+      <section class="page-card" aria-label="Current page">
+        <div class="page-copy">
+          <span>Current page</span>
+          <strong id="page-host">Loading…</strong>
+          <small id="page-title"></small>
+        </div>
+        <button id="copy-url" class="small-button" type="button">Copy URL</button>
+      </section>
+
+      <nav class="tabs" role="tablist" aria-label="Toolkit sections">
+        <button class="tab is-active" type="button" role="tab" aria-selected="true" data-panel="overview">Overview</button>
+        <button class="tab" type="button" role="tab" aria-selected="false" data-panel="details">All details</button>
+        <button class="tab" type="button" role="tab" aria-selected="false" data-panel="tools">Saved tools</button>
+      </nav>
+
+      <main>
+        <section id="overview-panel" class="panel" role="tabpanel">
+          <div class="panel-heading">
+            <div>
+              <p id="audit-status" class="status-line" data-state="loading">Preparing local audit…</p>
+              <small id="audited-url" class="audited-url"></small>
+            </div>
+            <button id="run-audit" class="secondary-button" type="button">Run again</button>
+          </div>
+
+          <div id="audit-summary" class="summary-grid" hidden>
+            <div class="summary-card summary-pass"><strong id="pass-count">0</strong><span>Pass</span></div>
+            <div class="summary-card summary-review"><strong id="review-count">0</strong><span>Review</span></div>
+            <div class="summary-card summary-info"><strong id="info-count">0</strong><span>Info</span></div>
+          </div>
+
+          <p id="audit-empty" class="empty-state" hidden></p>
+          <section class="priority-section" aria-labelledby="priority-title">
+            <div class="section-title-row">
+              <div>
+                <p class="eyebrow">Start here</p>
+                <h2 id="priority-title">What needs attention</h2>
+              </div>
+              <span id="priority-count" class="section-count">Checking…</span>
+            </div>
+            <div id="priority-results" class="priority-results">
+              <p class="loading-card">Checking the page for actionable issues…</p>
+            </div>
+          </section>
+
+          <section class="snapshot-section" aria-labelledby="snapshot-title">
+            <div class="section-title-row">
+              <div>
+                <p class="eyebrow">At a glance</p>
+                <h2 id="snapshot-title">Search and page structure</h2>
+              </div>
+            </div>
+            <div id="overview-insights" class="overview-insights">
+              <p class="loading-card">Preparing the page snapshot…</p>
+            </div>
+            <div id="overview-vitals" class="overview-vitals" aria-live="polite">
+              <span class="loading-dot"></span>
+              Measuring current-visit performance…
+            </div>
+          </section>
+
+          <section class="evidence-section" aria-labelledby="evidence-title">
+            <div class="section-title-row">
+              <div>
+                <p class="eyebrow">Automatic local evidence</p>
+                <h2 id="evidence-title">Supporting checks</h2>
+                <p>These start when you open the toolkit. Page data is processed locally; crawl requests go only to this site.</p>
+              </div>
+            </div>
+
+            <div class="local-engine-grid">
+              <details id="accessibility-engine-card" class="local-engine-card" open>
+                <summary class="engine-heading">
+                  <div>
+                    <p class="engine-label">Accessibility</p>
+                    <h3 id="accessibility-engine-title">Barriers people may encounter</h3>
+                  </div>
+                  <span id="accessibility-summary-state" class="engine-state">Analysing…</span>
+                </summary>
+                <div class="engine-controls"><button id="run-accessibility-engine" class="text-button" type="button">Refresh</button></div>
+                <div id="accessibility-engine-results" class="engine-results" aria-live="polite">Analysing locally…</div>
+              </details>
+
+              <details id="web-vitals-card" class="local-engine-card" open>
+                <summary class="engine-heading">
+                  <div>
+                    <p class="engine-label">Performance</p>
+                    <h3 id="web-vitals-title">How this visit felt</h3>
+                  </div>
+                  <span id="web-vitals-summary-state" class="engine-state">Measuring…</span>
+                </summary>
+                <div class="engine-controls"><button id="run-web-vitals" class="text-button" type="button">Refresh</button></div>
+                <div id="web-vitals-results" class="engine-results" aria-live="polite">Measuring this visit…</div>
+              </details>
+            </div>
+            <details id="crawl-card" class="crawl-card" open>
+              <summary class="engine-heading">
+                <div>
+                  <p class="engine-label">Indexing and delivery</p>
+                  <h3 id="crawl-title">Can search engines reach the essentials?</h3>
+                </div>
+                <span id="crawl-summary-state" class="engine-state">Checking…</span>
+              </summary>
+              <div class="engine-controls"><button id="run-crawl-check" class="text-button" type="button">Refresh</button></div>
+              <div id="crawl-results" class="crawl-results" aria-live="polite">Checking this site’s public files and response headers…</div>
+            </details>
+          </section>
+
+          <section class="recommendations-section" aria-labelledby="recommendations-title">
+            <div class="section-title-row recommendations-heading">
+              <div class="tool-intro">
+                <p class="eyebrow">Optional external checks</p>
+                <h2 id="recommendations-title">Verify the findings that matter</h2>
+                <p id="action-intro">The local audit will explain which deeper checks fit this page and why.</p>
+              </div>
+              <button id="manage-links" class="text-button" type="button">Manage links</button>
+            </div>
+            <div id="tool-groups"></div>
+            <p class="method-note">Nothing is sent automatically. Opening a deeper check sends this URL or domain to that service under its own terms and privacy policy.</p>
+          </section>
+        </section>
+
+        <section id="details-panel" class="panel" role="tabpanel" hidden>
+          <div class="tool-intro">
+            <p class="eyebrow">Full local report</p>
+            <h2>Every check and page signal</h2>
+            <p>Expand a check to see why it matters, what to change and the relevant verification link.</p>
+          </div>
+          <div id="audit-results" class="audit-results" hidden></div>
+          <div id="insight-groups" class="insight-groups">
+            <p class="loading-card">Preparing detailed page insights…</p>
+          </div>
+          <div class="audit-actions">
+            <button id="copy-summary" class="primary-button" type="button" disabled>Copy audit summary</button>
+          </div>
+          <p class="privacy-note"><span aria-hidden="true">●</span> Page content and results stay in this browser. These checks are prompts for review, not a ranking score.</p>
+        </section>
+
+        <section id="tools-panel" class="panel" role="tabpanel" hidden>
+          <div class="section-title-row saved-tools-heading">
+            <div>
+              <p class="eyebrow">Reusable on every page</p>
+              <h2>Your saved SEO tools</h2>
+              <p>Each link inserts this page or domain before opening. Built-ins and your own links stay available across websites.</p>
+            </div>
+            <button id="manage-saved-tools" class="text-button" type="button">Manage</button>
+          </div>
+          <div id="saved-tool-groups" class="saved-tool-groups">
+            <p class="loading-card">Preparing your page-aware tools…</p>
+          </div>
+          <p class="method-note">Opening a tool sends the current URL or domain to that independent service. Nothing is sent until you choose a link.</p>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/defaults.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
