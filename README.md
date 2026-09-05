@@ -1,6 +1,6 @@
 # Opace Essential SEO Toolkit & SEO Audit Tool – Google Chrome Extension
 
-![Essential SEO Toolkit private on-page SEO audit](assets/essential-seo-toolkit-chrome-hero.png)
+![Opace Essential SEO Toolkit for Chrome](assets/essential-seo-toolkit-chrome-hero.png)
 
 [![Version](https://img.shields.io/badge/version-5.0.1-0b6e4f)](https://github.com/OpaceDigitalAgency/essential-seo-toolkit-chrome-extension/releases/tag/v5.0.1)
 [![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-install-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/icagkiolfkmndbggheneeamfbnobcdma)
